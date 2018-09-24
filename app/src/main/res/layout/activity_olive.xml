@@ -5,65 +5,101 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".TreeOlive">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="@drawable/olive_background"
-        >
+        android:background="@drawable/olive_background">
 
         <ImageButton
-            android:layout_margin="16dp"
             android:id="@+id/back_button_olive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:src="@drawable/ic_a_back"/>
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_a_back" />
 
         <ImageButton
-            android:layout_margin="16dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
             android:id="@+id/shopping_button_olive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_a_bag"/>
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_a_bag" />
 
     </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="@string/Olive"
+                android:textColor="#909090"
                 android:textSize="28sp"
-                android:textStyle="bold"
-                android:textColor="#909090"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/Olive_text1"
-                android:padding="16dp"/>
+                android:padding="16dp"
+                android:text="@string/Olive_text1" />
+
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="24dp"
+                android:layout_height="40dp"
                 android:layout_margin="8dp"
-                android:src="@drawable/star"
-                />
+                android:src="@drawable/star" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_weight="1"
+                    android:text="Quantive:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/quantive_olive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_weight="1"
+                    android:inputType="numberSigned" />
+
+                <Button
+                    android:id="@+id/add_cart_olive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_weight="1"
+                    android:onClick="clickAdd"
+                    android:text="Add To Cart" />
+
+            </LinearLayout>
 
 
         </LinearLayout>
 
 
-
-
-
     </ScrollView>
+
 </LinearLayout>
