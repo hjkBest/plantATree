@@ -70,15 +70,16 @@
 
                 <TextView
                     android:id="@+id/textView4"
-                    android:layout_width="0dp"
+                    android:layout_width="20dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="fill_horizontal"
                     android:layout_weight="1"
-                    android:text="Quantive:"
+                    android:gravity="center"
+                    android:text="Amount:"
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/quantive_olive"
+                    android:id="@+id/amount_olive"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="fill_horizontal"
@@ -92,7 +93,8 @@
                     android:layout_gravity="fill_horizontal"
                     android:layout_weight="1"
                     android:onClick="clickAdd"
-                    android:text="Add To Cart" />
+                    android:text="Add To Cart"
+                    android:enabled="false"/>
 
             </LinearLayout>
 
