@@ -4,7 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
+
+import java.util.ArrayList;
 
 public class TreeOlive extends AppCompatActivity {
 
@@ -22,5 +25,22 @@ public class TreeOlive extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
+
+    public void clickAdd(View view){
+        EditText number=(EditText) findViewById(R.id.quantive_olive);
+        String name="Olive";
+        String price="12";
+        String qty=number.getText().toString();
+
+        Intent intent=new Intent(TreeOlive.this,Cart.class);
+
+        intent.putExtra("Name",  name);
+        intent.putExtra("Price", price);
+        intent.putExtra("QTY", qty);
+        startActivity(intent);
+
+    }
+
 }
