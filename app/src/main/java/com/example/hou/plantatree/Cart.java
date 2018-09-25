@@ -40,13 +40,13 @@ public class Cart extends AppCompatActivity{
         String qty=intent.getStringExtra("QTY");
         String name=intent.getStringExtra("Name");
         String price = intent.getStringExtra("Price");
+        String height=intent.getStringExtra("Height");
+        String age=intent.getStringExtra("Age");
 
         Product product=new Product();
-        product.setAttribute(qty,name,price);
+        product.setAttribute(qty,name,price,height,age);
 
         cart.add(product);
-
-
 
         SharedPreferences sharedPreferences= getSharedPreferences("shared",MODE_PRIVATE);
         SharedPreferences.Editor editor= sharedPreferences.edit();
@@ -77,7 +77,10 @@ public class Cart extends AppCompatActivity{
             GridLayout.LayoutParams paramName =new GridLayout.LayoutParams();
             GridLayout.LayoutParams paramQTY =new GridLayout.LayoutParams();
             GridLayout.LayoutParams paramPrice =new GridLayout.LayoutParams();
+            GridLayout.LayoutParams paramHeight =new GridLayout.LayoutParams();
+            GridLayout.LayoutParams paramAge =new GridLayout.LayoutParams();
             GridLayout.LayoutParams paramButton =new GridLayout.LayoutParams();
+
 
             TextView view_name = new TextView(this);
             view_name.setWidth(150);
@@ -101,15 +104,28 @@ public class Cart extends AppCompatActivity{
             paramPrice.rowSpec=GridLayout.spec(r+1);
             view_price.setLayoutParams(paramPrice);
 
+            TextView view_age= new TextView(this);
+            view_age.setText(String.valueOf(cart.get(r).age));
+            grid.addView(view_age);
+            paramAge.columnSpec=GridLayout.spec(3);
+            paramAge.rowSpec=GridLayout.spec(r+1);
+            view_age.setLayoutParams(paramAge);
+
+            TextView view_height= new TextView(this);
+            view_height.setText(String.valueOf(cart.get(r).height));
+            grid.addView(view_height);
+            paramHeight.columnSpec=GridLayout.spec(4);
+            paramHeight.rowSpec=GridLayout.spec(r+1);
+            view_height.setLayoutParams(paramHeight);
+
             Button button=new Button(this);
             button.setText("remove");
             button.setId(r);
-            paramButton.columnSpec=GridLayout.spec(3);
-            paramPrice.rowSpec=GridLayout.spec(r+1);
+            paramButton.columnSpec=GridLayout.spec(5);
+            paramButton.rowSpec=GridLayout.spec(r+1);
             grid.addView(button);
-
-
             button.setLayoutParams(paramButton);
+
             button.setOnClickListener(new View.OnClickListener(){
                 @Override
                 //On click function
