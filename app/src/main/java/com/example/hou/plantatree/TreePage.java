@@ -24,6 +24,15 @@ public class TreePage extends AppCompatActivity{
             }
         });
 
+        ImageButton k1=(ImageButton)findViewById(R.id.button_kauri);
+        k1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(TreePage.this, TreeKauri.class);
+                startActivity(intent);
+            }
+        });
+
         ImageButton back1=(ImageButton)findViewById(R.id.back_button1);
         back1.setOnClickListener(new View.OnClickListener() {
             @Override
