@@ -28,13 +28,15 @@
             android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:textSize="24sp"/>
+
         <ImageButton
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
             android:id="@+id/shopping_button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_a_bag"/>
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:onClick="ToCart"
+            android:src="@drawable/ic_a_bag" />
 
     </RelativeLayout>
     <GridLayout

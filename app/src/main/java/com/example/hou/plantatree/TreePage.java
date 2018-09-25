@@ -42,4 +42,9 @@ public class TreePage extends AppCompatActivity{
             }
         });
     }
+
+    public void ToCart(View view){
+        Intent intent=new Intent(TreePage.this,Cart.class);
+        startActivity(intent);
+    }
 }
