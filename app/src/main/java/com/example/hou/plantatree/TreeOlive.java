@@ -92,12 +92,16 @@ public class TreeOlive extends AppCompatActivity {
         String name="Olive";
         String price="12";
         String qty=amount.getText().toString();
+        String height=height_text.getText().toString().split(" ")[1];
+        String age=age_text.getText().toString().split(" ")[1];
 
         Intent intent=new Intent(TreeOlive.this,Cart.class);
 
         intent.putExtra("Name",  name);
         intent.putExtra("Price", price);
         intent.putExtra("QTY", qty);
+        intent.putExtra("Age",age);
+        intent.putExtra("Height",height);
         startActivity(intent);
 
     }
