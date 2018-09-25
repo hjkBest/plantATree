@@ -46,7 +46,10 @@ public class Cart extends AppCompatActivity{
         Product product=new Product();
         product.setAttribute(qty,name,price,height,age);
 
-        cart.add(product);
+        if(product.qty!=null){
+            cart.add(product);
+        }
+
 
         SharedPreferences sharedPreferences= getSharedPreferences("shared",MODE_PRIVATE);
         SharedPreferences.Editor editor= sharedPreferences.edit();

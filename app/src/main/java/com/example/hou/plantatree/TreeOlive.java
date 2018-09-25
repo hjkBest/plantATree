@@ -125,5 +125,10 @@ public class TreeOlive extends AppCompatActivity {
         }
     };
 
+    public void ToCart(View view){
+        Intent intent=new Intent(TreeOlive.this,Cart.class);
+        startActivity(intent);
+    }
+
 
 }

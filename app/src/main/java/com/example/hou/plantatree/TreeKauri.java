@@ -91,12 +91,16 @@ public class TreeKauri extends AppCompatActivity {
         String name="Kauri";
         String price="11";
         String qty=amount.getText().toString();
+        String height=height_text.getText().toString().split(" ")[1];
+        String age=age_text.getText().toString().split(" ")[1];
 
         Intent intent=new Intent(TreeKauri.this,Cart.class);
 
         intent.putExtra("Name",  name);
         intent.putExtra("Price", price);
         intent.putExtra("QTY", qty);
+        intent.putExtra("Age",age);
+        intent.putExtra("Height",height);
         startActivity(intent);
 
     }
@@ -119,6 +123,11 @@ public class TreeKauri extends AppCompatActivity {
 
         }
     };
+
+    public void ToCart(View view){
+        Intent intent=new Intent(TreeKauri.this,Cart.class);
+        startActivity(intent);
+    }
 
 
 }
