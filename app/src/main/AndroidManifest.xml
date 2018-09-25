@@ -25,6 +25,9 @@
         <activity
             android:name=".Cart"
             android:parentActivityName=".Cart" />
+        <activity
+            android:name=".TreeKauri"
+            android:parentActivityName=".TreePage" />
     </application>
 
 </manifest>
