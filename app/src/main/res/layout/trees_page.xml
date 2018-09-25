@@ -91,7 +91,7 @@
             android:layout_margin="16dp"
             android:orientation="vertical">
             <ImageButton
-                android:id="@+id/button_kuari"
+                android:id="@+id/button_kauri"
                 android:layout_margin="8dp"
                 android:layout_width="134dp"
                 android:layout_height="134dp"
@@ -99,7 +99,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/kuari"
+                android:text="@string/kauri"
                 android:gravity="center_horizontal"
                 android:textStyle="bold"
                 android:textSize="20sp" />
