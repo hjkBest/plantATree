@@ -18,7 +18,6 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_margin="16dp"
-            android:background="@null"
             android:src="@drawable/ic_a_back" />
 
         <ImageButton
@@ -29,7 +28,6 @@
             android:layout_alignParentTop="true"
             android:layout_margin="16dp"
             android:onClick="ToCart"
-            android:background="@null"
             android:src="@drawable/ic_a_bag" />
 
     </RelativeLayout>
