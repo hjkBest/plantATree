@@ -8,7 +8,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/olive_background">
+        android:background="@drawable/kauri_background">
 
         <ImageButton
             android:id="@+id/back_button_kauri"
