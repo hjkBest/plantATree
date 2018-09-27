@@ -10,11 +10,15 @@ import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Cart extends AppCompatActivity{
 
@@ -24,6 +28,7 @@ public class Cart extends AppCompatActivity{
     protected void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.cart_page);
+        Button purchase = (Button) findViewById(R.id.purchase);
 
         SharedPreferences sharedPreferences_laod= getSharedPreferences("shared",MODE_PRIVATE);
         Gson gson_laod=new Gson();
@@ -37,11 +42,11 @@ public class Cart extends AppCompatActivity{
 
 
         Intent intent = getIntent();
-        String qty=intent.getStringExtra("QTY");
-        String name=intent.getStringExtra("Name");
-        String price = intent.getStringExtra("Price");
-        String height=intent.getStringExtra("Height");
-        String age=intent.getStringExtra("Age");
+        final String qty=intent.getStringExtra("QTY");
+        final String name=intent.getStringExtra("Name");
+        final String price = intent.getStringExtra("Price");
+        final String height=intent.getStringExtra("Height");
+        final String age=intent.getStringExtra("Age");
 
         Product product=new Product();
         product.setAttribute(qty,name,price,height,age);
@@ -58,6 +63,14 @@ public class Cart extends AppCompatActivity{
         editor.putString("cart list",json_save);
         editor.apply();
         setPage();
+        final Order theOrder = new Order(name, qty, price, height, age);
+
+        purchase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                toDatabase(theOrder);
+            }
+        });
 
     }
 
@@ -154,5 +167,20 @@ public class Cart extends AppCompatActivity{
         total_price.setText("Total: "+String.valueOf(total));
     }
 
+
+    public void toDatabase(Order anOrder)
+    {
+        FirebaseDatabase sendCart = FirebaseDatabase.getInstance();
+        DatabaseReference ref = sendCart.getReference();
+
+
+        DatabaseReference order = ref.child("Orders");
+        Map<String, Order> orders = new HashMap<>();
+        orders.put("Order", anOrder);
+
+
+
+
+    }
 
 }
