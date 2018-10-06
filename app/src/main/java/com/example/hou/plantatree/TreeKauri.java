@@ -69,7 +69,7 @@ public class TreeKauri extends AppCompatActivity {
                 new SeekBar.OnSeekBarChangeListener() {
                     @Override
                     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                        height_text.setText("Height: "+progress+"m");
+                        height_text.setText("Height: "+progress+" meter");;
                     }
 
                     @Override

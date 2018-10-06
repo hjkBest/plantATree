@@ -51,6 +51,7 @@ public class TreeOlive extends AppCompatActivity {
                 new SeekBar.OnSeekBarChangeListener() {
                     @Override
                     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                        progress = progress + 1;
                         age_text.setText("Age: "+progress+" year");
                     }
 
@@ -70,7 +71,8 @@ public class TreeOlive extends AppCompatActivity {
                 new SeekBar.OnSeekBarChangeListener() {
                     @Override
                     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                        height_text.setText("Height: "+progress+"m");
+                        progress = progress + 2;
+                        height_text.setText("Height: "+progress+" meter");
                     }
 
                     @Override

@@ -23,4 +23,9 @@
     <string name="maintenance_content_kauri">The surface feeder roots of kauri are delicate and easily damaged by compaction. For maximum tree health, the root zone must be healthy and undisturbed. Kauri benefit from mulch around the root zone. Mulch holds moisture in the soil, insulates the soil and minimises weed growth, creating a good environment for the growth of feeder roots. Kauri don’t like being alone or on the edge of bush – they like to have some company around them. Kauri naturally drop their lower branches as they grow toward the forest canopy.</string>
     <string name="height_kauri">10 year height up to 10m, mature height 30m – 50m</string>
 
+    <string-array name="brands">
+    <item>City Campus</item>
+    <item>North Campus</item>
+    <item>South Campus</item>
+    </string-array>>
 </resources>

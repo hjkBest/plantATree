@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.TextView;
@@ -19,8 +18,6 @@ import java.util.ArrayList;
 public class Cart extends AppCompatActivity{
 
     ArrayList<Product> cart=new ArrayList<Product>();
-    private int row=0;
-
     protected void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.cart_page);
@@ -35,7 +32,6 @@ public class Cart extends AppCompatActivity{
             cart=new ArrayList<Product>();
         }
 
-
         Intent intent = getIntent();
         String qty=intent.getStringExtra("QTY");
         String name=intent.getStringExtra("Name");
@@ -49,7 +45,6 @@ public class Cart extends AppCompatActivity{
         if(product.qty!=null){
             cart.add(product);
         }
-
 
         SharedPreferences sharedPreferences= getSharedPreferences("shared",MODE_PRIVATE);
         SharedPreferences.Editor editor= sharedPreferences.edit();
@@ -71,6 +66,19 @@ public class Cart extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(Cart.this,TreePage.class);
+                startActivity(intent);
+            }
+        });
+
+        Button purchase_button=(Button)findViewById(R.id.purchase_button);
+        if(cart.size()==0){
+            purchase_button.setEnabled(false);
+        }
+
+        purchase_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(Cart.this,Purchase_select.class);
                 startActivity(intent);
             }
         });
@@ -146,13 +154,12 @@ public class Cart extends AppCompatActivity{
                 }
             });
         }
-        int total=0;
+        int totalValue=0;
         for(int i=0;i<cart.size();++i){
-            total+=Integer.valueOf(cart.get(i).price)*Integer.valueOf(cart.get(i).qty);
+            totalValue+=Integer.valueOf(cart.get(i).price)*Integer.valueOf(cart.get(i).qty);
         }
         TextView total_price=(TextView)findViewById(R.id.total_price_cart);
-        total_price.setText("Total: "+String.valueOf(total));
+
+        total_price.setText("Total: "+String.valueOf(totalValue));
     }
-
-
 }
