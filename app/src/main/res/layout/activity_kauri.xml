@@ -8,7 +8,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/olive_background">
+        android:background="@drawable/kauri_background">
 
         <ImageButton
             android:id="@+id/back_button_kauri"
@@ -17,6 +17,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_margin="16dp"
+            android:background="@null"
             android:src="@drawable/ic_a_back" />
 
         <ImageButton
@@ -27,6 +28,7 @@
             android:layout_alignParentTop="true"
             android:layout_margin="16dp"
             android:onClick="ToCart"
+            android:background="@null"
             android:src="@drawable/ic_a_bag" />
 
     </RelativeLayout>
