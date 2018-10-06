@@ -26,6 +26,15 @@
             android:name=".Cart"
             android:parentActivityName=".Cart" />
         <activity
+            android:name=".Purchase_select"
+            android:parentActivityName=".Purchase_select" />
+        <activity
+            android:name=".Pickup"
+            android:parentActivityName=".Pickup" />
+        <activity
+            android:name=".Delivery"
+            android:parentActivityName=".Delivery" />
+        <activity
             android:name=".TreeKauri"
             android:parentActivityName=".TreePage" />
     </application>
