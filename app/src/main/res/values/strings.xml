@@ -1,40 +1,31 @@
 <resources>
-    <string name="app_name">COMP602_Restaurant_Mobile_Application</string>
-    <string name="menu_search">search</string>
-    <string name="menu_shopping">shopping</string>
-    <string name="menu_profile">profile</string>
-    <string name="Restaurant1">Restaurant1</string>
-    <string name="Restaurant2">Restaurant2</string>
-    <string name="Restaurant3">Restaurant3</string>
-    <string name="Restaurant4">Restaurant4</string>
-    <string name="menu_of_R1">Restaurant 1 menu</string>
-    <string name="R1_meal1">Fish Fillet Noodle Soup \n $10</string>
-    <string name="R1_meal2">Curry Fish Fillet Noodle Soup \n $15</string>
-    <string name="R1_meal3">Chicken Curry Laksa \n $10</string>
-    <string name="R1_meal4">Vegetable Curry Laksa \n $12</string>
-    <string name="R1_meal5">Seafood Curry Laksa \n $12.99</string>
-    <string name="R1_meal6">Pappa Char koay Teaw \n $7.99</string>
-    <string name="R1_meal7">Pappa Fried Rice Noodles \n $15</string>
-    <string name="R1_meal8">Nasi Lemak With Beef Rendang \n $9</string>
-    <string name="R1_meal9">HaiNan Curry Chicken Chop With Rice \n $11</string>
-    <string name="R1_meal10">Steamed Mantau With KAYA \n $10.99</string>
-    <string name="R1_meal11">Roti KAYA \n $7.99</string>
-    <string name="R1_meal12">Roti Bom \n $6</string>
-    <string name="R1_foodPhoto">R1 food\'s Photo</string>
-    <string name="R2_foodPhoto">R2 food\'s Photo</string>
-    <string name="R3_foodPhoto">R3 food\'s Photo</string>
-    <string name="R4_foodPhoto">R4 food\'s Photo</string>
-    <string name="confirm">Confirm</string>
-    <string name="Nspicy">No Spicy</string>
-    <string name="Sspicy">Small Spicy</string>
-    <string name="Mspicy">Medium Spicy</string>
-    <string name="spicy">Spicy</string>
-    <string name="food">Food</string>
-    <string name="drink">drink</string>
-    <string name="dessert">dessert</string>
-    <string name="phone_number">Phone number</string>
-    <string name="order_detail">Order detail</string>
-    <string name="order_string">Hello</string>
-    <string name="send">send</string>
-    <string name="sendButton">SEND</string>
+    <string name="app_name">plantATree</string>
+    <string name="logo">logo</string>
+    <string name="welcomeButton">welcome</string>
+    <string name="menu_title">NZ TREES</string>
+    <string name="Olive">Olive</string>
+    <string name="Size_L_Olive">Year 3 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; $10.50 </string>
+    <string name="Size_S_Olive">Year 1 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; $8.50 </string>
+    <string name="kauri">Kauri</string>
+    <string name="Size_L_Kuari">Year 3 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;$10.50</string>
+    <string name="Size_S_Kuari">Year 1 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;$8.50</string>
+    <string name="Olive_text1">A small and slow-growing tree with a compact form which produces a heavy yield of fruit with good oil content in the summer. Thin, green/silver coloured leaves and multiple branching add colour and texture when used as screening or as a garden feature. The bark is light grey.</string>
+    <string name="condition_title">Conditions to plant</string>
+    <string name="condition_content_olive">Free draining, moist, best in fertile soils, can handle mild droughts</string>
+    <string name="Maintenance_title">Maintenance requirement</string>
+    <string name="maintenance_content_olive">Olives are versatile trees, forming a thick hedge or screen. They can be clipped as a topiary standard, thrive in large pots and can even be espalier-trained. Olive trees can be grown in a range of climates they produce best with a long, hot, dry summer to ripen the fruit, and cool winters.</string>
+    <string name="height">Height</string>
+    <string name="height_olive">10 year height 2 – 3m, mature height 4m, clipped height 1.5 – 2m</string>
+    <string name="Growth_rate_title">Growth Rate</string>
+    <string name="Moderate">Moderate</string>
+    <string name="kauri_text1">A true NZ icon, this tall-growing native tree creates a natural canopy as the plant gets older. It has oval, green, glossy, leathery leaves and layered branches. This is one of the largest trees in the world so it needs lots of space and is good for open sections or larger gardens. It is also good as an accent against a tall building or as a stand-alone feature.</string>
+    <string name="condition_content_kauri">Plant in tight groves to create your own Kauri stand. Remember with time these trees will become big, so ensure you have enough room. Grows best in rich fertile, free draining soils.</string>
+    <string name="maintenance_content_kauri">The surface feeder roots of kauri are delicate and easily damaged by compaction. For maximum tree health, the root zone must be healthy and undisturbed. Kauri benefit from mulch around the root zone. Mulch holds moisture in the soil, insulates the soil and minimises weed growth, creating a good environment for the growth of feeder roots. Kauri don’t like being alone or on the edge of bush – they like to have some company around them. Kauri naturally drop their lower branches as they grow toward the forest canopy.</string>
+    <string name="height_kauri">10 year height up to 10m, mature height 30m – 50m</string>
+
+    <string-array name="brands">
+    <item>City Campus</item>
+    <item>North Campus</item>
+    <item>South Campus</item>
+    </string-array>>
 </resources>
