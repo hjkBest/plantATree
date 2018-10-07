@@ -40,8 +40,18 @@
             android:name=".TreeKauri"
             android:parentActivityName=".TreePage" />
         <activity
+            android:name=".TreeEvergreen"
+            android:parentActivityName=".TreePage" />
+        <activity
+            android:name=".TreeFastigiata"
+            android:parentActivityName=".TreePage" />
+        <activity
+            android:name=".TreeLemon"
+            android:parentActivityName=".TreePage" />
+        <activity
             android:name=".TreeTitoki"
             android:parentActivityName=".TreePage" />
+
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -15,8 +15,8 @@ public class TreePage extends AppCompatActivity{
         setTitle("Tree Menu");
         //setImage();
 
-        ImageButton o1=(ImageButton)findViewById(R.id.button_olive);
-        o1.setOnClickListener(new View.OnClickListener() {
+        ImageButton olive =(ImageButton)findViewById(R.id.button_olive);
+        olive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(TreePage.this, TreeOlive.class);
@@ -24,8 +24,8 @@ public class TreePage extends AppCompatActivity{
             }
         });
 
-        ImageButton k1=(ImageButton)findViewById(R.id.button_kauri);
-        k1.setOnClickListener(new View.OnClickListener() {
+        ImageButton kauri =(ImageButton)findViewById(R.id.button_kauri);
+        kauri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(TreePage.this, TreeKauri.class);
@@ -33,8 +33,35 @@ public class TreePage extends AppCompatActivity{
             }
         });
 
-        ImageButton t1=(ImageButton)findViewById(R.id.button_titoki);
-        k1.setOnClickListener(new View.OnClickListener() {
+        ImageButton titoki =(ImageButton)findViewById(R.id.button_titoki);
+        titoki.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(TreePage.this, TreeTitoki.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton evergreen =(ImageButton)findViewById(R.id.button_evergreen);
+        evergreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(TreePage.this, TreeTitoki.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton fastigiata =(ImageButton)findViewById(R.id.button_fastigiata);
+        fastigiata.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(TreePage.this, TreeTitoki.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton lemon=(ImageButton)findViewById(R.id.back_button_lemon);
+        lemon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(TreePage.this, TreeTitoki.class);
@@ -50,6 +77,19 @@ public class TreePage extends AppCompatActivity{
                 startActivity(intent);
             }
         });
+
+        ImageButton cart1=(ImageButton)findViewById(R.id.shopping_button1);
+        cart1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(TreePage.this, Cart.class);
+                startActivity(intent);
+            };
+
+
+        });
+
+
     }
 
     public void ToCart(View view){

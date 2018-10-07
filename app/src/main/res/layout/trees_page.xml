@@ -166,6 +166,125 @@
                 android:text="@string/Size_S_titoki"/>
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="300dp"
+            android:background="@drawable/ic_square_white"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/button_lemon"
+                android:layout_margin="8dp"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:background="@drawable/circle_lemon"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lemon"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/star"
+                />
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textSize="16sp"
+                android:text="@string/Size_L_lemon"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textSize="16sp"
+                android:text="@string/Size_S_lemon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="300dp"
+            android:background="@drawable/ic_square_white"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/button_fastigiata"
+                android:layout_margin="8dp"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:background="@drawable/circle_fastigiata"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fastigiata"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/star"
+                />
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textSize="16sp"
+                android:text="@string/Size_L_fastigiata"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textSize="16sp"
+                android:text="@string/Size_S_fastigiata"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="300dp"
+            android:background="@drawable/ic_square_white"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/button_evergreen"
+                android:layout_margin="8dp"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:background="@drawable/circle_evergreen"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/evergreen"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/star"
+                />
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textSize="16sp"
+                android:text="@string/Size_L_evergreen"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textSize="16sp"
+                android:text="@string/Size_S_evergreen"/>
+        </LinearLayout>
+
+
+
     </GridLayout>
 
     <Button
