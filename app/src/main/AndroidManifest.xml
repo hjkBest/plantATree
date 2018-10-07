@@ -22,9 +22,6 @@
             android:name=".TreePage"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".TreeOlive"
-            android:parentActivityName=".TreePage" />
-        <activity
             android:name=".Cart"
             android:parentActivityName=".Cart" />
         <activity
@@ -37,7 +34,13 @@
             android:name=".Delivery"
             android:parentActivityName=".Delivery" />
         <activity
+            android:name=".TreeOlive"
+            android:parentActivityName=".TreePage" />
+        <activity
             android:name=".TreeKauri"
+            android:parentActivityName=".TreePage" />
+        <activity
+            android:name=".TreeTitoki"
             android:parentActivityName=".TreePage" />
         <activity android:name=".LoginActivity">
             <intent-filter>

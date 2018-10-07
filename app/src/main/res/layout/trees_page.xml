@@ -53,12 +53,13 @@
             android:background="@drawable/ic_square_white"
             android:layout_margin="16dp"
             android:orientation="vertical">
+
             <ImageButton
                 android:id="@+id/button_olive"
-                android:layout_margin="8dp"
                 android:layout_width="134dp"
                 android:layout_height="134dp"
-                android:background="@drawable/a_olive_copy"/>
+                android:layout_margin="8dp"
+                android:background="@drawable/circle_olive" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -92,12 +93,13 @@
             android:background="@drawable/ic_square_white"
             android:layout_margin="16dp"
             android:orientation="vertical">
+
             <ImageButton
                 android:id="@+id/button_kauri"
-                android:layout_margin="8dp"
                 android:layout_width="134dp"
                 android:layout_height="134dp"
-                android:background="@drawable/a_kauri"/>
+                android:layout_margin="8dp"
+                android:background="@drawable/circle_kauri" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -116,14 +118,54 @@
                 android:layout_width="match_parent"
                 android:layout_height="24dp"
                 android:textSize="16sp"
-                android:text="@string/Size_L_Kuari"/>
+                android:text="@string/Size_L_kuari"/>
             <TextView
                 android:layout_margin="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="24dp"
                 android:textSize="16sp"
-                android:text="@string/Size_S_Kuari"/>
+                android:text="@string/Size_S_kuari"/>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="300dp"
+            android:background="@drawable/ic_square_white"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/button_titoki"
+                android:layout_margin="8dp"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:background="@drawable/circle_titoki"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titoki"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/star"
+                />
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textSize="16sp"
+                android:text="@string/Size_L_titoki"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textSize="16sp"
+                android:text="@string/Size_S_titoki"/>
+        </LinearLayout>
+
     </GridLayout>
 
     <Button
