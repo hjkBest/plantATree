@@ -46,7 +46,7 @@ public class TreePage extends AppCompatActivity{
         evergreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(TreePage.this, TreeTitoki.class);
+                Intent intent=new Intent(TreePage.this, TreeEvergreen.class);
                 startActivity(intent);
             }
         });
@@ -55,16 +55,16 @@ public class TreePage extends AppCompatActivity{
         fastigiata.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(TreePage.this, TreeTitoki.class);
+                Intent intent=new Intent(TreePage.this, TreeFastigiata.class);
                 startActivity(intent);
             }
         });
 
-        ImageButton lemon=(ImageButton)findViewById(R.id.back_button_lemon);
+        ImageButton lemon=(ImageButton)findViewById(R.id.button_lemon);
         lemon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(TreePage.this, TreeTitoki.class);
+                Intent intent=new Intent(TreePage.this, TreeLemon.class);
                 startActivity(intent);
             }
         });

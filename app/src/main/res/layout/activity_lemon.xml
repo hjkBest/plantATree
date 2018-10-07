@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".TreeOlive">
+    tools:context=".TreeLemon">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/olive_background">
+        android:background="@drawable/lemon_background">
 
         <ImageButton
             android:id="@+id/back_button_lemon"
