@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class TreePage extends AppCompatActivity{
+    
+    private FirebaseAuth firebaseAuth;
+    private Button logout;
 
     @Override
     protected void onCreate(Bundle saveInstanceState){
@@ -14,6 +17,18 @@ public class TreePage extends AppCompatActivity{
         setContentView(R.layout.trees_page);
         setTitle("Tree Menu");
         //setImage();
+        
+        firebaseAuth=FirebaseAuth.getInstance();
+        logout=(Button) findViewById(R.id.btnLogout);
+        
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                firebaseAuth.signOut();
+                finish();
+                startActivity(new Intent(TreePage.this,MainActivity.class));
+            }
+        });
 
         ImageButton olive =(ImageButton)findViewById(R.id.button_olive);
         olive.setOnClickListener(new View.OnClickListener() {
