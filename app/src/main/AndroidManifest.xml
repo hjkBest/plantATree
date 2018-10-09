@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hou.plantatree">
-
+    
+<uses-permission android:name="android.permission.INTERNET" />
+    
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,9 +22,6 @@
             android:name=".TreePage"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".TreeOlive"
-            android:parentActivityName=".TreePage" />
-        <activity
             android:name=".Cart"
             android:parentActivityName=".Cart" />
         <activity
@@ -35,8 +34,32 @@
             android:name=".Delivery"
             android:parentActivityName=".Delivery" />
         <activity
+            android:name=".TreeOlive"
+            android:parentActivityName=".TreePage" />
+        <activity
             android:name=".TreeKauri"
             android:parentActivityName=".TreePage" />
+        <activity
+            android:name=".TreeEvergreen"
+            android:parentActivityName=".TreePage" />
+        <activity
+            android:name=".TreeFastigiata"
+            android:parentActivityName=".TreePage" />
+        <activity
+            android:name=".TreeLemon"
+            android:parentActivityName=".TreePage" />
+        <activity
+            android:name=".TreeTitoki"
+            android:parentActivityName=".TreePage" />
+
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity"></activity>
     </application>
 
 </manifest>

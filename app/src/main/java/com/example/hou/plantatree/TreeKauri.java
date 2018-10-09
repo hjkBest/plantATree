@@ -25,7 +25,7 @@ public class TreeKauri extends AppCompatActivity {
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_kauri);
-        setTitle("Olive");
+        setTitle("Kauri");
 
         amount=findViewById(R.id.amount_kauri);
         add=findViewById(R.id.add_cart_kauri);
@@ -50,6 +50,7 @@ public class TreeKauri extends AppCompatActivity {
                 new SeekBar.OnSeekBarChangeListener() {
                     @Override
                     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                        progress = progress + 1;
                         age_text.setText("Age: "+progress+" year");
                     }
 
@@ -69,6 +70,7 @@ public class TreeKauri extends AppCompatActivity {
                 new SeekBar.OnSeekBarChangeListener() {
                     @Override
                     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                        progress = progress + 2;
                         height_text.setText("Height: "+progress+" meter");;
                     }
 

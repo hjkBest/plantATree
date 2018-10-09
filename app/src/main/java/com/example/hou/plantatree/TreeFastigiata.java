@@ -12,7 +12,7 @@ import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-public class TreeOlive extends AppCompatActivity {
+public class TreeFastigiata extends AppCompatActivity {
 
     private EditText amount;
     private Button add;
@@ -24,24 +24,24 @@ public class TreeOlive extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.activity_olive);
-        setTitle("Olive");
+        setContentView(R.layout.activity_fastigiata);
+        setTitle("Fastigiata");
 
-        amount=findViewById(R.id.amount_olive);
-        add=findViewById(R.id.add_cart_olive);
-        age_seek=findViewById(R.id.age_seakbar_olive);
-        height_seek=findViewById(R.id.height_seakbar_olive);
-        age_text=findViewById(R.id.age_textview_olive);
-        height_text=findViewById(R.id.height_textview_olive);
+        amount=findViewById(R.id.amount_fastigiata);
+        add=findViewById(R.id.add_cart_fastigiata);
+        age_seek=findViewById(R.id.age_seakbar_fastigiata);
+        height_seek=findViewById(R.id.height_seakbar_fastigiata);
+        age_text=findViewById(R.id.age_textview_fastigiata);
+        height_text=findViewById(R.id.height_textview_fastigiata);
 
 
         amount.addTextChangedListener(inputTextWatch);
 
-        ImageButton back_olive=(ImageButton)findViewById(R.id.back_button_olive);
-        back_olive.setOnClickListener(new View.OnClickListener() {
+        ImageButton back_fastigiata=(ImageButton)findViewById(R.id.back_button_fastigiata);
+        back_fastigiata.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(TreeOlive.this, TreePage.class);
+                Intent intent=new Intent(TreeFastigiata.this, TreePage.class);
                 startActivity(intent);
             }
         });
@@ -90,13 +90,13 @@ public class TreeOlive extends AppCompatActivity {
     }
 
     public void clickAdd(View view){
-        String name="Olive";
+        String name="Fastigiata";
         String price="12";
         String qty=amount.getText().toString();
         String height=height_text.getText().toString().split(" ")[1];
         String age=age_text.getText().toString().split(" ")[1];
 
-        Intent intent=new Intent(TreeOlive.this,Cart.class);
+        Intent intent=new Intent(TreeFastigiata.this,Cart.class);
 
         intent.putExtra("Name",  name);
         intent.putExtra("Price", price);
@@ -127,7 +127,7 @@ public class TreeOlive extends AppCompatActivity {
     };
 
     public void ToCart(View view){
-        Intent intent=new Intent(TreeOlive.this,Cart.class);
+        Intent intent=new Intent(TreeFastigiata.this,Cart.class);
         startActivity(intent);
     }
 

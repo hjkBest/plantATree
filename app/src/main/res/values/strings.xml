@@ -3,25 +3,62 @@
     <string name="logo">logo</string>
     <string name="welcomeButton">welcome</string>
     <string name="menu_title">NZ TREES</string>
+    <string name="condition_title">Conditions to plant</string>
+    <string name="Maintenance_title">Maintenance requirement</string>
+    <string name="height">Height</string>
+    <string name="Growth_rate_title">Growth Rate</string>
+    <string name="Moderate">Moderate</string>
+
     <string name="Olive">Olive</string>
     <string name="Size_L_Olive">Year 3 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; $10.50 </string>
     <string name="Size_S_Olive">Year 1 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; $8.50 </string>
-    <string name="kauri">Kauri</string>
-    <string name="Size_L_Kuari">Year 3 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;$10.50</string>
-    <string name="Size_S_Kuari">Year 1 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;$8.50</string>
     <string name="Olive_text1">A small and slow-growing tree with a compact form which produces a heavy yield of fruit with good oil content in the summer. Thin, green/silver coloured leaves and multiple branching add colour and texture when used as screening or as a garden feature. The bark is light grey.</string>
-    <string name="condition_title">Conditions to plant</string>
     <string name="condition_content_olive">Free draining, moist, best in fertile soils, can handle mild droughts</string>
-    <string name="Maintenance_title">Maintenance requirement</string>
     <string name="maintenance_content_olive">Olives are versatile trees, forming a thick hedge or screen. They can be clipped as a topiary standard, thrive in large pots and can even be espalier-trained. Olive trees can be grown in a range of climates they produce best with a long, hot, dry summer to ripen the fruit, and cool winters.</string>
-    <string name="height">Height</string>
     <string name="height_olive">10 year height 2 – 3m, mature height 4m, clipped height 1.5 – 2m</string>
-    <string name="Growth_rate_title">Growth Rate</string>
-    <string name="Moderate">Moderate</string>
+
+
+    <string name="kauri">Kauri</string>
+    <string name="Size_L_kuari">Year 3 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;$10.50</string>
+    <string name="Size_S_kuari">Year 1 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;$8.50</string>
     <string name="kauri_text1">A true NZ icon, this tall-growing native tree creates a natural canopy as the plant gets older. It has oval, green, glossy, leathery leaves and layered branches. This is one of the largest trees in the world so it needs lots of space and is good for open sections or larger gardens. It is also good as an accent against a tall building or as a stand-alone feature.</string>
     <string name="condition_content_kauri">Plant in tight groves to create your own Kauri stand. Remember with time these trees will become big, so ensure you have enough room. Grows best in rich fertile, free draining soils.</string>
     <string name="maintenance_content_kauri">The surface feeder roots of kauri are delicate and easily damaged by compaction. For maximum tree health, the root zone must be healthy and undisturbed. Kauri benefit from mulch around the root zone. Mulch holds moisture in the soil, insulates the soil and minimises weed growth, creating a good environment for the growth of feeder roots. Kauri don’t like being alone or on the edge of bush – they like to have some company around them. Kauri naturally drop their lower branches as they grow toward the forest canopy.</string>
     <string name="height_kauri">10 year height up to 10m, mature height 30m – 50m</string>
+
+    <string name="titoki">Titoki</string>
+    <string name="Size_L_titoki">Year 3 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; $10.50 </string>
+    <string name="Size_S_titoki">Year 1 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; $8.50 </string>
+    <string name="titoki_text1">A small and slow-growing tree with a compact form which produces a heavy yield of fruit with good oil content in the summer. Thin, green/silver coloured leaves and multiple branching add colour and texture when used as screening or as a garden feature. The bark is light grey.</string>
+    <string name="condition_content_titoki">Free draining, moist, best in fertile soils, can handle mild droughts</string>
+    <string name="maintenance_content_titoki">Olives are versatile trees, forming a thick hedge or screen. They can be clipped as a topiary standard, thrive in large pots and can even be espalier-trained. Olive trees can be grown in a range of climates they produce best with a long, hot, dry summer to ripen the fruit, and cool winters.</string>
+    <string name="height_titoki">10 year height 2 – 3m, mature height 4m, clipped height 1.5 – 2m</string>
+
+    <string name="evergreen">Evergreen Alder</string>
+    <string name="Size_L_evergreen">Year 3 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; $10.50 </string>
+    <string name="Size_S_evergreen">Year 1 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; $8.50 </string>
+    <string name="evergreen_text1">A small and slow-growing tree with a compact form which produces a heavy yield of fruit with good oil content in the summer. Thin, green/silver coloured leaves and multiple branching add colour and texture when used as screening or as a garden feature. The bark is light grey.</string>
+    <string name="condition_content_evergreen">Free draining, moist, best in fertile soils, can handle mild droughts</string>
+    <string name="maintenance_content_evergreen">Olives are versatile trees, forming a thick hedge or screen. They can be clipped as a topiary standard, thrive in large pots and can even be espalier-trained. Olive trees can be grown in a range of climates they produce best with a long, hot, dry summer to ripen the fruit, and cool winters.</string>
+    <string name="height_evergreen">10 year height 2 – 3m, mature height 4m, clipped height 1.5 – 2m</string>
+
+    <string name="fastigiata">Fastigiata</string>
+    <string name="Size_L_fastigiata">Year 3 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; $10.50 </string>
+    <string name="Size_S_fastigiata">Year 1 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; $8.50 </string>
+    <string name="fastigiata_text1">A small and slow-growing tree with a compact form which produces a heavy yield of fruit with good oil content in the summer. Thin, green/silver coloured leaves and multiple branching add colour and texture when used as screening or as a garden feature. The bark is light grey.</string>
+    <string name="condition_content_fastigiata">Free draining, moist, best in fertile soils, can handle mild droughts</string>
+    <string name="maintenance_content_fastigiata">Olives are versatile trees, forming a thick hedge or screen. They can be clipped as a topiary standard, thrive in large pots and can even be espalier-trained. Olive trees can be grown in a range of climates they produce best with a long, hot, dry summer to ripen the fruit, and cool winters.</string>
+    <string name="height_fastigiata">10 year height 2 – 3m, mature height 4m, clipped height 1.5 – 2m</string>
+
+    <string name="lemon">Lemon</string>
+    <string name="Size_L_lemon">Year 3 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; $10.50 </string>
+    <string name="Size_S_lemon">Year 1 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; $8.50 </string>
+    <string name="lemon_text1">A small and slow-growing tree with a compact form which produces a heavy yield of fruit with good oil content in the summer. Thin, green/silver coloured leaves and multiple branching add colour and texture when used as screening or as a garden feature. The bark is light grey.</string>
+    <string name="condition_content_lemon">Free draining, moist, best in fertile soils, can handle mild droughts</string>
+    <string name="maintenance_content_lemon">Olives are versatile trees, forming a thick hedge or screen. They can be clipped as a topiary standard, thrive in large pots and can even be espalier-trained. Olive trees can be grown in a range of climates they produce best with a long, hot, dry summer to ripen the fruit, and cool winters.</string>
+    <string name="height_lemon">10 year height 2 – 3m, mature height 4m, clipped height 1.5 – 2m</string>
+
+
 
     <string-array name="brands">
     <item>City Campus</item>

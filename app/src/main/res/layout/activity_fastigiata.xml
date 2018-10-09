@@ -4,15 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".TreeKauri">
+    tools:context=".TreeFastigiata">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/kauri_background">
+        android:background="@drawable/fastigiata_background">
 
         <ImageButton
-            android:id="@+id/back_button_kauri"
+            android:id="@+id/back_button_fastigiata"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -22,7 +22,7 @@
             android:src="@drawable/ic_a_back" />
 
         <ImageButton
-            android:id="@+id/shopping_button_kauri"
+            android:id="@+id/shopping_button_fastigiata"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -47,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="@string/kauri"
+                android:text="@string/fastigiata"
                 android:textColor="#909090"
                 android:textSize="28sp"
                 android:textStyle="bold" />
@@ -56,7 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                android:text="@string/kauri_text1" />
+                android:text="@string/fastigiata_text1" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -71,7 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                android:text="@string/condition_content_kauri" />
+                android:text="@string/condition_content_fastigiata" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -86,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                android:text="@string/maintenance_content_kauri" />
+                android:text="@string/maintenance_content_fastigiata" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -101,7 +101,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                android:text="@string/height_kauri" />
+                android:text="@string/height_fastigiata" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -125,32 +125,30 @@
                 android:src="@drawable/star" />
 
             <TextView
-                android:id="@+id/age_textview_kauri"
+                android:id="@+id/age_textview_fastigiata"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
                 android:text="Age: 1 year" />
 
             <SeekBar
-                android:id="@+id/age_seakbar_kauri"
+                android:id="@+id/age_seakbar_fastigiata"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:max="10"
-                android:min="1" />
+                android:max="9" />
 
             <TextView
-                android:id="@+id/height_textview_kauri"
+                android:id="@+id/height_textview_fastigiata"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
                 android:text="Height: 2m" />
 
             <SeekBar
-                android:id="@+id/height_seakbar_kauri"
+                android:id="@+id/height_seakbar_fastigiata"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:max="20"
-                android:min="2" />
+                android:max="18" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -170,7 +168,7 @@
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/amount_kauri"
+                    android:id="@+id/amount_fastigiata"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="fill_horizontal"
@@ -179,7 +177,7 @@
                     android:inputType="numberSigned" />
 
                 <Button
-                    android:id="@+id/add_cart_kauri"
+                    android:id="@+id/add_cart_fastigiata"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="fill_horizontal"
@@ -195,7 +193,5 @@
 
 
     </ScrollView>
-
-
 
 </LinearLayout>

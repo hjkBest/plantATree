@@ -132,7 +132,7 @@
                 android:text="Age: 1 year" />
 
             <SeekBar
-                android:id="@+id/age_seakbar_olice"
+                android:id="@+id/age_seakbar_olive"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:max="9" />
@@ -145,7 +145,7 @@
                 android:text="Height: 2m" />
 
             <SeekBar
-                android:id="@+id/height_seakbar_olice"
+                android:id="@+id/height_seakbar_olive"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:max="18" />

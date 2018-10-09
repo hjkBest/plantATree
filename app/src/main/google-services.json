@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "540057345615",
+    "firebase_url": "https://plantatree-a9d8a.firebaseio.com",
+    "project_id": "plantatree-a9d8a",
+    "storage_bucket": "plantatree-a9d8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540057345615:android:1567bedbe60572c6",
+        "android_client_info": {
+          "package_name": "com.example.hou.plantatree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540057345615-dq4clsqdqgapn5cfgg3q8tlqv3os4i5i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hou.plantatree",
+            "certificate_hash": "a5ba2e212df28ace8065878366241b706a69c0ca"
+          }
+        },
+        {
+          "client_id": "540057345615-kjh1476rtp0npaik4gjthkk63otjkfil.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hou.plantatree",
+            "certificate_hash": "bf5d7ecd783e0993f9d69d892438255d0b97de06"
+          }
+        },
+        {
+          "client_id": "540057345615-hm9ae4h3ugjpb4o56dgmp5qc98rillhc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs-WfXLksr5mXmZO9jPxAsFahDIepNJQQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540057345615-hm9ae4h3ugjpb4o56dgmp5qc98rillhc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
