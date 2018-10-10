@@ -53,8 +53,7 @@
             android:parentActivityName=".TreePage" />
         <activity android:name=".Search"
             android:parentActivityName=".Search"/>
-        <activity android:name=".Filter"
-            android:parentActivityName=".TreePage"/>
+      
 
         <activity android:name=".LoginActivity">
             <intent-filter>
