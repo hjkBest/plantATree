@@ -132,11 +132,10 @@
                 android:text="Age: 1 year" />
 
             <SeekBar
-                android:id="@+id/age_seakbar_olice"
+                android:id="@+id/age_seekbar_olive"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:max="10"
-                android:min="1" />
+                android:max="9" />
 
             <TextView
                 android:id="@+id/height_textview_olive"
@@ -146,11 +145,10 @@
                 android:text="Height: 2m" />
 
             <SeekBar
-                android:id="@+id/height_seakbar_olice"
+                android:id="@+id/height_seekbar_olive"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:max="20"
-                android:min="2" />
+                android:max="18" />
 
             <LinearLayout
                 android:layout_width="match_parent"
