@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -18,16 +20,30 @@ import java.util.ArrayList;
 public class Cart extends AppCompatActivity{
 
     ArrayList<Product> cart=new ArrayList<Product>();
+    private FirebaseAuth firebaseAuth;
+    FirebaseUser firebaseUser;
+    int totalCon;
+
     protected void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.cart_page);
 
-        SharedPreferences sharedPreferences_laod= getSharedPreferences("shared",MODE_PRIVATE);
+        firebaseAuth=FirebaseAuth.getInstance();
+        firebaseUser=firebaseAuth.getCurrentUser();
+
+
+        SharedPreferences sharedPreferences_laod= getSharedPreferences(firebaseUser.getEmail()+"shared",MODE_PRIVATE);
         Gson gson_laod=new Gson();
         String json_load=sharedPreferences_laod.getString("cart list",null);
         Type type=new TypeToken<ArrayList<Product>>(){}.getType();
         cart = gson_laod.fromJson(json_load,type);
 
+        String total_load=sharedPreferences_laod.getString("total consume",null);
+        Type total_type=new TypeToken<Integer>(){}.getType();
+        if(total_load==null)total_load="0";
+        totalCon=Integer.valueOf(total_load);
+
+        cart = gson_laod.fromJson(json_load,type);
         if(cart==null){
             cart=new ArrayList<Product>();
         }
@@ -46,7 +62,7 @@ public class Cart extends AppCompatActivity{
             cart.add(product);
         }
 
-        SharedPreferences sharedPreferences= getSharedPreferences("shared",MODE_PRIVATE);
+        SharedPreferences sharedPreferences= getSharedPreferences(firebaseUser.getEmail()+"shared",MODE_PRIVATE);
         SharedPreferences.Editor editor= sharedPreferences.edit();
         Gson gson_save=new Gson();
         String json_save = gson_save.toJson(cart);
@@ -143,7 +159,7 @@ public class Cart extends AppCompatActivity{
                 public void onClick(View view) {
                     //Create the intent to start another activity
                     cart.remove(view.getId());
-                    SharedPreferences sharedPreferences= getSharedPreferences("shared",MODE_PRIVATE);
+                    SharedPreferences sharedPreferences= getSharedPreferences(firebaseUser.getEmail()+"shared",MODE_PRIVATE);
                     SharedPreferences.Editor editor= sharedPreferences.edit();
                     Gson gson_save=new Gson();
                     String json_save = gson_save.toJson(cart);
@@ -154,12 +170,19 @@ public class Cart extends AppCompatActivity{
                 }
             });
         }
-        int totalValue=0;
+        double totalValue=0;
         for(int i=0;i<cart.size();++i){
-            totalValue+=Integer.valueOf(cart.get(i).price)*Integer.valueOf(cart.get(i).qty);
+            totalValue+=Double.valueOf(cart.get(i).price)*Integer.valueOf(cart.get(i).qty);
         }
         TextView total_price=(TextView)findViewById(R.id.total_price_cart);
 
-        total_price.setText("Total: "+String.valueOf(totalValue));
+        if(totalCon<9){
+            total_price.setText("Total: "+String.valueOf(totalValue));
+        }
+        else{
+            totalValue=totalValue*0.9;
+            total_price.setText("Total (VIP 10%off Discount): "+String.valueOf(totalValue));
+        }
+
     }
 }
