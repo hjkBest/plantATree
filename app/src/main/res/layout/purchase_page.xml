@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Pick up or Delivery?"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/delivery_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/delivery_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delivery" />
+
+        <RadioButton
+            android:id="@+id/pickup_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick up" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/select_confrim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:onClick="selectConfirmClick"
+        android:text="Confirm" />
+
+    <Button
+        android:id="@+id/select_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="selectBackClick"
+        android:text="Back" />
+
+</LinearLayout>
