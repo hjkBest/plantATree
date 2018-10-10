@@ -12,9 +12,8 @@ import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-
 public class TreeOlive extends AppCompatActivity {
+
     private EditText amount;
     private Button add;
     private SeekBar height_seek;
@@ -30,8 +29,8 @@ public class TreeOlive extends AppCompatActivity {
 
         amount=findViewById(R.id.amount_olive);
         add=findViewById(R.id.add_cart_olive);
-        age_seek=findViewById(R.id.age_seakbar_olice);
-        height_seek=findViewById(R.id.height_seakbar_olice);
+        age_seek=findViewById(R.id.age_seekbar_olive);
+        height_seek=findViewById(R.id.height_seekbar_olive);
         age_text=findViewById(R.id.age_textview_olive);
         height_text=findViewById(R.id.height_textview_olive);
 
@@ -51,6 +50,7 @@ public class TreeOlive extends AppCompatActivity {
                 new SeekBar.OnSeekBarChangeListener() {
                     @Override
                     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                        progress = progress + 1;
                         age_text.setText("Age: "+progress+" year");
                     }
 
@@ -70,7 +70,8 @@ public class TreeOlive extends AppCompatActivity {
                 new SeekBar.OnSeekBarChangeListener() {
                     @Override
                     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                        height_text.setText("Height: "+progress+"m");
+                        progress = progress + 2;
+                        height_text.setText("Height: "+progress+" meter");
                     }
 
                     @Override
