@@ -107,8 +107,6 @@ public class TreePage extends AppCompatActivity{
 
         });
 
-
-
         ImageButton search=(ImageButton)findViewById(R.id.search);
         search.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -116,7 +114,15 @@ public class TreePage extends AppCompatActivity{
                 Intent intent=new Intent(TreePage.this, Search.class);
                 startActivity(intent);
             };
+        });
 
+        ImageButton filter=(ImageButton)findViewById(R.id.filter);
+        filter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TreePage.this, Filter.class);
+                startActivity(intent);
+            }
         });
 
     }
