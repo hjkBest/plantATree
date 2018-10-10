@@ -34,6 +34,9 @@
             android:name=".Delivery"
             android:parentActivityName=".Delivery" />
         <activity
+            android:name=".Invoice"
+            android:parentActivityName=".Invoice" />
+        <activity
             android:name=".TreeOlive"
             android:parentActivityName=".TreePage" />
         <activity
