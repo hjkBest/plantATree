@@ -25,8 +25,6 @@
         app:layout_constraintGuide_end="256dp" />
 
     <EditText
-        android:background="@drawable/edit_text_file"
-        android:hint="Email"
         android:id="@+id/register_mail"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
@@ -35,15 +33,15 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:background="@drawable/edit_text_file"
         android:ems="10"
+        android:hint="Email"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:background="@drawable/edit_text_file"
-        android:hint="Password"
         android:id="@+id/register_password"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
@@ -51,10 +49,12 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_file"
         android:ems="10"
+        android:hint="Password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
 
@@ -104,6 +104,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/register_progress" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/password"
+        app:layout_constraintBottom_toTopOf="@+id/register_progress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_password"
+        app:layout_constraintVertical_bias="0.545" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -8,6 +8,8 @@
     <string name="height">Height</string>
     <string name="Growth_rate_title">Growth Rate</string>
     <string name="Moderate">Moderate</string>
+    <string name="password">Password must be at least 6 characters</string>
+
 
     <string name="Olive">Olive</string>
     <string name="Size_L_Olive">Year 3 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; $10.50 </string>
