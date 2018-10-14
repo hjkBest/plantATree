@@ -4,16 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.Button;
+import android.widget.ImageButton;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
+
 
 public class TreePage extends AppCompatActivity{
     
     private FirebaseAuth firebaseAuth;
     private Button logout;
-    FirebaseUser firebaseUser;
 
     @Override
     protected void onCreate(Bundle saveInstanceState){
@@ -21,12 +20,8 @@ public class TreePage extends AppCompatActivity{
         setContentView(R.layout.trees_page);
         setTitle("Tree Menu");
         //setImage();
-
-
+        
         firebaseAuth=FirebaseAuth.getInstance();
-        firebaseUser=firebaseAuth.getCurrentUser();
-        firebaseUser.getEmail();
-
         logout=(Button) findViewById(R.id.btnLogout);
         
         logout.setOnClickListener(new View.OnClickListener() {
@@ -110,6 +105,15 @@ public class TreePage extends AppCompatActivity{
             };
 
 
+        });
+
+        ImageButton search=(ImageButton)findViewById(R.id.search);
+        search.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(TreePage.this, Search.class);
+                startActivity(intent);
+            };
         });
 
 
