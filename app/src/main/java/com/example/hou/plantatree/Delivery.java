@@ -89,7 +89,7 @@ public class Delivery extends AppCompatActivity {
 
         Intent intent =new Intent(Delivery.this,Invoice.class);
         intent.putExtra("address","Delivery to "+ address.getText());
-        intent.putExtra("phone",phone.getText());
+        intent.putExtra("phone",String.valueOf(phone.getText()));
         intent.putExtra("totalPrice",String.valueOf(totalValue));
         intent.putExtra("qty",String.valueOf(totalAmount));
         startActivity(intent);

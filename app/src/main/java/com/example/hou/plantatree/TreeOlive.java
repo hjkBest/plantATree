@@ -29,8 +29,8 @@ public class TreeOlive extends AppCompatActivity {
 
         amount=findViewById(R.id.amount_olive);
         add=findViewById(R.id.add_cart_olive);
-        age_seek=findViewById(R.id.age_seakbar_olive);
-        height_seek=findViewById(R.id.height_seakbar_olive);
+        age_seek=findViewById(R.id.age_seekbar_olive);
+        height_seek=findViewById(R.id.height_seekbar_olive);
         age_text=findViewById(R.id.age_textview_olive);
         height_text=findViewById(R.id.height_textview_olive);
 
