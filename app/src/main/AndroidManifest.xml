@@ -52,6 +52,9 @@
             android:name=".TreeLemon"
             android:parentActivityName=".TreePage" />
         <activity
+            android:name=".Search"
+            android:parentActivityName=".Search" />
+        <activity
             android:name=".TreeTitoki"
             android:parentActivityName=".TreePage" />
 
